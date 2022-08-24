@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Apple</title>
+    <style>
+        body{
+    margin: 0px;
+    padding: 0px;
+}
+#navbar{
+    height: 50px;
+    width:100%;
+    background-color: black;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+}
+#navbar>div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    align-items: center;
+}
+#navbar>div>input{
+    border: 1px solid white;
+    background-color: black;
+    height: 25px;
+}
+#navbar>div>button{
+    background-color: #007aff;
+    padding: 6px 8px;
+    color: white;
+    cursor: pointer;
+}
+#main>img{
+    width: 100%;
+}
+#main>div{
+    margin-top: -28px;
+    background-color: #090a05;
+    color: white;
+    text-align: center;
+}
+#main>div>button{
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+#main>div>p{
+    margin-top: 1px;
+    font-size: 12px;
+    color: #888987;
+    margin-bottom: -2px;
+}
+#main>div>p>a{
+    color: #007aff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#main>div>i{
+    margin-top: 40px;
+}
+#popular{
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+#popular>div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,200px);
+    gap: 40px;
+}
+#popular>div>img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+#emmy{
+    margin: auto;
+    width: 90%;
+    height: auto;
+    margin-top: -70px;
+}
+#emmy>p{
+    margin-top: -18px;
+    color: #aaaaaa;
+}
+#emmy>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,100px);
+    gap: 40px;
+}
+#emmy>div>img{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.season{
+    width: 90%;
+    margin: auto;
+    margin-top: 70px;
+}
+.season>div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,100px);
+    gap: 40px;
+}
+.season>div>img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.originals{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.originals>div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,250px);
+    gap: 20px;
+}
+.originals>div>div{
+    height: 90%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+.originals>div>div>img{
+    width: 100%;
+    border-radius: 10px;
+}
+.originals>div>div p{
+    font-size: 12px;
+    color: #8a8a8a;
+    margin-left: 5px;
+}
+.originals>div>div>h3{
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}
+.soon{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+.soon>div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,150px);
+    gap: 40px;
+}
+.soon>p{
+    margin-top: -10px;
+}
+.soon>div>img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#see{
+    margin-top: 40px;
+}
+#see>img{
+    width: 100%;
+}
+#main-2{
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+#main-2>img{
+    width: 100%;
+    border-radius: 15px;
+}
+.seaso{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+}
+.seaso>div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,100px);
+    gap: 40px;
+}
+.seaso>div>img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <img src="https://linkpicture.com/q/Capture_235.png" alt="" />
+      <div>
+        <input type="text" placeholder="Search" />
+        <button>Sign In</button>
+      </div>
+    </div>
+    <div id="main">
+      <img src="https://linkpicture.com/q/Capture1_10.png" alt="" />
+      <div>
+        <h1>
+          Exclusively on Apple TV+. Watch here and on the Apple TV app across
+          your devices.
+        </h1>
+        <button>Start Free Trial</button>
+        <p>7 day free, then $4.99/month</p>
+        <p>
+          Or 3 months free when you buy an elligible Apple device.<a
+            >Terms.apply.</a
+          >
+          Some titles coming later to Apple TV+.
+        </p>
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <div id="popular">
+      <h2>Most Popular Now</h2>
+      <div>
+    
+    <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt="">
+    <img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt="">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/I6dfv7hld3_fZZt-PoYsUQ/738x416.webp" alt="">
+    <img src="https://is5-ssl.mzstatic.com/image/thumb/ewq0-5ZSairVdRtcg43s0w/738x416.webp" alt="">
+    <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt="">
+      </div>
+    </div>
+    <div id="emmy">
+        <h3>Emmy <i class="fa-solid fa-r"></i> Nominees</h3>
+        <p>Explore the series that are up for television's biggest price</p>
+        <div>
+            <img src="https://linkpicture.com/q/tedlassoemmy.png" alt="">
+            <img src="https://linkpicture.com/q/severanceemmy_1.png" alt="">
+            <img src="https://linkpicture.com/q/morningemmy_1.png" alt="">
+            <img src="https://linkpicture.com/q/schemenemmy_1.png" alt="">    
+        </div>
+    </div>
+    <div class="season">
+        <h2>Watch Entire Seasons</h2>
+        <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/IyvoDdhWEjtSADaSryepIw/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt="">
+        </div>
+    </div>
+    <div class="originals">
+        <h2>Latest Originals</h2>
+        <div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/I6dfv7hld3_fZZt-PoYsUQ/1478x832.webp" alt="">
+                <p>DRAMA</p>
+                <h3>Bad Sisters</h3>
+                <p>A tight Knit clan of sisters is investigated for the death of their toxic brother-in-law.</p>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/mRDk-JQVdE2Mzo3vHtHWjQ/1478x832.webp" alt="">
+                <p>MYSTERY</p>
+                <h3>Surfside Girls</h3>
+                <p>Beachside best friends investigate a series of supernatural.</p>
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/ewq0-5ZSairVdRtcg43s0w/1478x832.webp" alt="">
+                <p>DRAMA</p>
+                <h3>Five Days at Memorial.</h3>
+                <p>A hospital is besiged during. Hurricane Katrina in a series based on actual events.</p>
+            </div>
+            <div>
+                <img src="https://is2-ssl.mzstatic.com/image/thumb/3gwPKd4h15ZXDprBfJqYPg/1478x832.webp" alt="">
+                <p>KIDS & FAMILY</p>
+                <h3>Lucy's School</h3>
+                <p>Lucy learns that teaching is tougher than she thought in this love letter to educators.</p>
+            </div>
+            <div>
+                <img src="https://is5-ssl.mzstatic.com/image/thumb/P-1f-E_Qew_9syoQd34Wlw/1478x832.webp" alt="">
+                <p>KIDS & FAMILY</p>
+                <h3>The Snoopy Show</h3>
+                <p>The world famous beagle is back for a new season of adventures with his pals.</p>
+            </div>
+        </div>
+    </div>
+    <div class="soon">
+        <h2>Coming Soon</h2>
+        <p>Add to your Up Next watchlist today.</p>
+        <div>
+            <img src="https://linkpicture.com/q/seeseason.png" alt="">
+            <img src="https://linkpicture.com/q/lifeseason.png" alt="">
+            <img src="https://linkpicture.com/q/gustyseason.png" alt="">
+            <img src="https://linkpicture.com/q/central.png" alt="">
+        </div>
+    </div>
+    <div class="soon">
+        <h2>Major League Baseball</h2>
+        <p>Free for limited time, watch Friday Night Baseball and daily coverage.</p>
+        <div>
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Features116/v4/fe/30/99/fe30991b-023f-65db-6c47-9bcaacab5977/90310982-ea94-40a5-81e4-9d8de34c261e.lsr/1478x832fe.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Features126/v4/f4/0a/4a/f40a4ac5-1d02-811d-f16b-9f5516fb7156/e42ffec9-d624-47fc-8dba-674142619205.lsr/1478x832fe.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/43/bb/de/43bbde5e-e7df-6f87-47ff-7cdfc211dc21/b07c188b-e1a2-4020-a4fc-c3fa00aa22d8.lsr/1478x832fe.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Features126/v4/9a/31/b3/9a31b32d-49b2-883c-4980-d21c4a54ca61/99152498-54bf-4672-a902-6b6785530333.lsr/1478x832fe.webp" alt="">
+        </div>
+    </div>
+    <div id="see">
+        <img src="https://linkpicture.com/q/seemain.png" alt="">
+    </div>
+    <div class="seaso">
+        <h2>Watch, Discuss, Repeat</h2>
+        <p>Fire up your group text -- you'll want to unpack these shows with your friends.</p>
+        <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/I6dfv7hld3_fZZt-PoYsUQ/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/IyvoDdhWEjtSADaSryepIw/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt="">
+        </div>
+    </div>
+    <div class="seaso">
+        <h2>From page to Screen</h2>
+        <div>
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/ewq0-5ZSairVdRtcg43s0w/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/QiFf4rD5DY65HbtJUOjE7Q/738x416.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/fiTyznFr4Rsvd25TNhffww/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp" alt="">
+        </div>
+    </div>
+    <div class="seaso">
+        <h2>Complex Characters</h2>
+        <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/5SQrBAWXONSSRweUSmuRyg/738x416.webp" alt="">
+            <img src="https://is3-ssl.mzstatic.com/image/thumb/neRAWaMZZ5xVz4fnbFXJUA/738x416.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp" alt="">
+        </div>
+    </div>
+    <div class="originals">
+        <h2>Our Astonishing Planet</h2>
+        <div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/vPnF3gIE_xEMoXPI1SyluA/1478x832.webp" alt="">
+                <p>DOCUMENTARY</p>
+                <h3>Prehistoric Planet</h3>
+                <p>An epic series that lets you experience the world of dinosaurs like never before.</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/6kPVBOcFxH5eWRVp9Vy9BA/1478x832.webp" alt="">
+                <p>DOCUMENTARY</p>
+                <h3>Tiny World</h3>
+                <p>Narrated by Paul Rudd, this docuseries showcases nature's littlest heroes.</p>
+            </div>
+            <div>
+                <img src="https://is1-ssl.mzstatic.com/image/thumb/xW-YFC38wO80XQewW5Mn7A/1478x832.webp" alt="">
+                <p>DOCUMENTARY</p>
+                <h3>Earth at Night in colour</h3>
+                <p>TOM Hiddleston narrates a second season of animals nocturnal lives in full color.</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/fS85BR5uGUlTFLXLAWAMsg/1478x832.webp" alt="">
+                <p>DOCUMENTARY</p>
+                <h3>The Year Earth Changed</h3>
+                <p>David Attenborough narrates an astonishing look at how much lockdown set nature free.</p>
+            </div>
+            <div>
+                <img src="https://is3-ssl.mzstatic.com/image/thumb/CurGU6004wvloeDxunoxyA/1478x832.webp" alt="">
+                <p>DOCUMENTARY</p>
+                <h3>The Elephant Queen</h3>
+                <p>Embark on an epic journey in this family friendly love letter to a threatened species.</p>
+            </div>
+        </div>
+    </div>
+    <div class="seaso">
+        <h2>All Kinds of Brave</h2>
+        <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/mRDk-JQVdE2Mzo3vHtHWjQ/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/_dJgnWG8W30_qMRZYCEx-Q/738x416.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/RP47edx-hRW2rCun48Lx2w/738x416.webp" alt="">
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/y7Tj8Ig4DTzSgbm4DcoFyw/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/2lfdtvo9bvduvVLrbcASow/738x416.webp" alt="">
+        </div>
+    </div>
+    <div id="main-2">
+        <img src="https://linkpicture.com/q/main.png" alt="">
+    </div>
+    <div class="seaso">
+        <h2>All Drama Series</h2>
+        <div>
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/I6dfv7hld3_fZZt-PoYsUQ/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt="">
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/ewq0-5ZSairVdRtcg43s0w/738x416.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/S4eF69xSeArWZz2DZKaTOQ/738x416.webp" alt="">
+        </div>
+    </div>
+    <div class="soon">
+        <h2>Bad Sisters</h2>
+        <p>Five sisters were suspected of murdering one of their husbands in this dark comedy.</p>
+        <div>
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/29/ab/a3/29aba3e6-ee96-96a7-65b0-c7bfae90c126/1b989cf0-cff3-43f8-a53a-cfe2273bfd26.lsr/1478x832fe.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/a7/11/d2/a711d265-60be-392e-6c1d-4aa6e128059c/be149cc5-dcbe-48e8-a250-eedd8478b981.lsr/1478x832fe.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/45/52/b0/4552b026-e77c-f19d-97fd-f6b6304933d6/88f0f0ca-7a2f-41f2-983b-d6f1230d2c1f.lsr/1478x832fe.webp" alt="">
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/ab/bf/c0/abbfc01a-a790-a539-172d-923e9dea5061/77359b60-2090-404a-9996-36cd0787a46c.lsr/1478x832fe.webp" alt="">
+        </div>
+    </div>
+  </body>
+</html>
+
+<script
+  src="https://kit.fontawesome.com/24c494a6b6.js"
+  crossorigin="anonymous"
+></script>
+
+
