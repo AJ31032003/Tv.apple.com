@@ -22,16 +22,20 @@
     width: 20%;
     align-items: center;
 }
-#navbar>div>input{
+#navbar>div input{
     border: 1px solid white;
     color: white;
     background-color: black;
     height: 25px;
 }
-#navbar>div>button{
+#navbar>div>a~a{
     background-color: #007aff;
     padding: 6px 8px;
     color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+#navbar>img{
     cursor: pointer;
 }
 #main>img{
@@ -43,7 +47,7 @@
     color: white;
     text-align: center;
 }
-#main>div>button{
+#main>div>a>button{
     padding-top: 15px;
     padding-left: 50px;
     padding-right: 50px;
@@ -84,23 +88,23 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
 }
-#emmy{
+.emmy{
     margin: auto;
     width: 90%;
     height: auto;
     margin-top: -70px;
 }
-#emmy>p{
+.emmy>p{
     margin-top: -18px;
     color: #aaaaaa;
 }
-#emmy>div{
+.emmy>div{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(1,100px);
     gap: 40px;
 }
-#emmy>div>img{
+.emmy>div>img{
     width: 100%;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -191,7 +195,7 @@
 .seaso{
     width: 90%;
     margin: auto;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 .seaso>div{
     display: grid;
@@ -205,14 +209,49 @@
     border-radius: 10px;
     cursor: pointer;
 }
+.seaso>p{
+    margin-top: -18px;
+    color: #aaaaaa;
+}
+#apple>img:nth-child(1){
+    width: 100%;
+    margin-top: 50px;
+}
+#apple>p{
+    background-color: #000000;
+    margin-top: -10px;
+    color: #007aff;
+    text-align: center;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#apple>img~img{
+    width: 100%;
+    margin-top: -16px;
+}
+#footer{
+    width: 98%;
+    margin: auto;
+}
+#footer>div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+}
+#footer>table td{
+    padding-left: 8px;
+    cursor: pointer;
+    color: #007aff;
+    font-size: 10px;
+}
     </style>
   </head>
   <body>
     <div id="navbar">
       <img src="https://linkpicture.com/q/Capture_235.png" alt="" />
       <div>
-        <input type="text" placeholder="Search" />
-        <button>Sign In</button>
+        <a href="search.html"><input type="text" placeholder="Search"/></a>
+        <a href="sign.html">Sign In</a>
       </div>
     </div>
     <div id="main">
@@ -222,7 +261,7 @@
           Exclusively on Apple TV+. Watch here and on the Apple TV app across
           your devices.
         </h1>
-        <button>Start Free Trial</button>
+        <a href="sign.html"><button>Start Free Trial</button></a>
         <p>7 day free, then $4.99/month</p>
         <p>
           Or 3 months free when you buy an elligible Apple device.<a
@@ -244,7 +283,7 @@
     <img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt="">
       </div>
     </div>
-    <div id="emmy">
+    <div class="emmy">
         <h3>Emmy <i class="fa-solid fa-r"></i> Nominees</h3>
         <p>Explore the series that are up for television's biggest price</p>
         <div>
@@ -440,6 +479,65 @@
             <img src="https://is3-ssl.mzstatic.com/image/thumb/neRAWaMZZ5xVz4fnbFXJUA/738x416.webp" alt="">
             <img src="https://is4-ssl.mzstatic.com/image/thumb/vWs6dt5xDhG_DjIoc-89tA/738x416.webp" alt="">
         </div>
+    </div>
+    <div class="seaso">
+        <h2>Notification Films & Series</h2>
+        <p>Explore fascinating stories that inspire and enlighten.</p>
+        <div>
+            <img src="https://is3-ssl.mzstatic.com/image/thumb/Features122/v4/40/a5/6a/40a56a15-9da2-967c-d69b-a5052bb404c5/89d54294-ded9-4ccc-859b-d5c5442c7682.lsr/1478x832fe.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Features116/v4/f8/7b/74/f87b74f9-ef7d-66c7-de75-6f621b9b800a/8c24d846-b3ad-4283-8424-4c055824358b.lsr/1478x832fe.webp" alt="">
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/50/62/c0/5062c0ba-9947-951a-9746-c2a8a6bbcb1d/3f5b9e26-ff9a-417a-aa68-88b07170a907.lsr/1478x832fe.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/df/1f/ee/df1feed6-5421-226d-8f83-80b25917a79c/aa243d71-7f71-4e3a-8f1c-53fc8af38cd2.lsr/1478x832fe.webp" alt="">
+        </div>
+    </div>
+    <div class="seaso">
+        <h2>All Nonfiction Series</h2>
+        <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/vPnF3gIE_xEMoXPI1SyluA/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/a99v9iRDYcIGof0CvxUUoA/738x416.webp" alt="">
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/XtNPMhEaBU1FKkk_QK-DeA/738x416.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/q15eqXAa_XH-L0KIDkPBJA/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Ulms3rha_yDCvDVlZyYUoQ/738x416.webp" alt="">
+        </div>
+    </div>
+    <div class="seaso">
+        <h2>Kids & Family</h2>
+        <p>Discover show and movies filled with wonder and imagination.</p>
+        <div>
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/b5/f1/2e/b5f12ecf-bea3-9f40-a3f4-2b9660fa0171/6343fb11-36eb-4ccf-867f-926f0ff57529.lsr/1478x832fe.webp" alt="">
+            <img src="https://is3-ssl.mzstatic.com/image/thumb/Features122/v4/91/34/93/91349390-2352-3646-571d-03d259cd942c/fd2a72bc-ccfa-410b-914e-e907052c7b48.lsr/1478x832fe.webp" alt="">
+            <img src="https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/2c/6f/1a/2c6f1a43-c21a-4dc3-a6bc-65eeda7ad8e0/8fb1cbae-88fc-44fc-a95a-18973a6f2699.lsr/1478x832fe.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/a2/75/fd/a275fdcd-be55-6ac1-0fe9-8a7e1490a6a9/b7106e74-e839-47ef-84a6-e5c258e2f401.lsr/1478x832fe.webp" alt="">
+        </div>
+    </div>
+    <div class="seaso">
+        <h2>Fun for All</h2>
+        <div>
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/HRBOk7ebJJpnufwvrhXLUw/738x416.webp" alt="">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/mRDk-JQVdE2Mzo3vHtHWjQ/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/d9YbWy1AerS9BZSiyoQ0Lw/738x416.webp" alt="">
+            <img src="https://is2-ssl.mzstatic.com/image/thumb/3gwPKd4h15ZXDprBfJqYPg/738x416.webp" alt="">
+            <img src="https://is5-ssl.mzstatic.com/image/thumb/P-1f-E_Qew_9syoQd34Wlw/738x416.webp" alt="">
+        </div>
+    </div>
+    <div id="apple">
+        <img src="https://linkpicture.com/q/Capturepple.png" alt="">
+        <p>Set up your devices ><br>Explore compatible devices ></p>
+        <img src="https://linkpicture.com/q/Capturexbox.png" alt="">
+    </div>
+    <div id="footer">
+        <div>
+            <p>Copyright 2022 Apple Inc. All rights reserved.</p>
+            <P>United States</P>
+        </div>
+        <table>
+            <tr>
+                <td>Internet Service Terms</td>
+                <td>Apple TV & Privacy</td>
+                <td>Cookie Warning</td>
+                <td>Support</td>
+            </tr>
+        </table>
     </div>
   </body>
 </html>
